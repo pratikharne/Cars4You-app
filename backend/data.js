@@ -1,7 +1,23 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Pratik Harne',
+      email: 'pratikharne6@gmail.com',
+      password: bcrypt.hashSync('Toggle@?4561', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'Om',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false,
+    },
+  ],
     products: [
         {
-            _id: '1',
+             
             name: 'Renault Kwid',
             category: 'mini SUV',
             image: '/images/p1.jpg',
@@ -13,7 +29,7 @@ const data = {
             description: 'Best Budget car avialable',
         },
         {
-            _id: '2',
+             
             name: 'Hyundai Verna',
             category: 'Sedan',
             image: '/images/p6.jpg',
@@ -24,8 +40,8 @@ const data = {
             numReviews: 38,
             description: 'Most Stylish Sedan',
         },
-        {
-            _id: '3',
+        { 
+
             name: 'Honda Amaze',
             category: 'Sedan',
             image: '/images/p3.jpg',
@@ -37,7 +53,7 @@ const data = {
             description: 'typical Indian sedan',
         },
         {
-            _id: '4',
+             
             name: 'Kia Seltos',
             category: 'SUV',
             image: '/images/p4.jpg',
@@ -49,7 +65,7 @@ const data = {
             description: 'Stylish SUV from KIA',
         },
         {
-            _id: '5',
+             
             name: 'Toyota Fortuner',
             category: 'mini SUV',
             image: '/images/p5.jpg',
@@ -61,7 +77,7 @@ const data = {
             description: 'best looking and solid build quality in SUV',
         },
         {
-        _id: '6',
+        
             name: 'Tata Harrier',
             category: 'SUV',
             image: '/images/p2.jpg',
