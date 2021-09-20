@@ -18,7 +18,7 @@ export default function ProductScreen(props) {
   const addToCartHandler = () => {
     props.history.push(`/cart/${productId}?qty=${qty}`);
   };
-  return (
+  return (        
     <div>
       {loading ? (
         <LoadingBox></LoadingBox>
